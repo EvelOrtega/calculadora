@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora Científica</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <form name="Calculadora científica">
+            <div>
+                <input class="display" id="display" name="display" value="0" size="28" maxlength="25">
+            </div>
+            <div>
+                <input type="button" class="btn" name="btn" value="(" onclick="addChar(this.form.display, '(')">
+                <input type="button" class="btn" name="btn" value=")" onclick="addChar(this.form.display,')')">
+                <input type="button" class="btn" name="btn" value="cos" onclick="if(checkNum(this.form.display.value)) { cos(this.form) }">
+                <input type="button" class="btn" name="btn" value="sin" onclick="if(checkNum(this.form.display.value)) { sin(this.form) }">
+                <input type="button" class="btn" name="btn" value="tan" onclick="if(checkNum(this.form.display.value)) { tan(this.form) }">
+            </div>
+            <div>
+                <input type="button" class="btn" name="btn" value="9" onclick="addChar(this.form.display, '9')">
+                <input type="button" class="btn" name="btn" value="8" onclick="addChar(this.form.display, '8')">
+                <input type="button" class="btn" name="btn" value="7" onclick="addChar(this.form.display, '7')">
+                <input type="button" class="btn" name="btn" value="x^" onclick="if(checkNum(this.form.display.value)) { exp(this.form) }">
+                <input type="button" class="btn" name="btn" value="/" onclick="addChar(this.form.display, '/')">
+            </div>
+            <div>
+                <input type="button" class="btn" name="btn" value="6" onclick="addChar(this.form.display, '6')">
+                <input type="button" class="btn" name="btn" value="5" onclick="addChar(this.form.display, '5')">
+                <input type="button" class="btn" name="btn" value="4" onclick="addChar(this.form.display, '4')">
+                <input type="button" class="btn" name="btn" value="ln" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }">
+                <input type="button" class="btn" name="btn" value="*" onclick="addChar(this.form.display, '*')">
+            </div>
+            <div>
+                <input type="button" class="btn" name="btn" value="3" onclick="addChar(this.form.display, '3')">
+                <input type="button" class="btn" name="btn" value="2" onclick="addChar(this.form.display, '2')">
+                <input type="button" class="btn" name="btn" value="1" onclick="addChar(this.form.display, '1')">
+                <input type="button" class="btn" name="btn" value="√" onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }">
+                <input type="button" class="btn" name="btn" value="-" onclick="addChar(this.form.display, '-')">
+            </div>
+            <div>
+                <input type="button" class="btn" name="btn" value="&#177" onclick="changeSign(this.form.display)">
+                <input type="button" class="btn" name="btn" value="0" onclick="addChar(this.form.display, '0')">
+                <input type="button" class="btn" name="btn" value="." onclick="addChar(this.form.display, '.')">
+                <input type="button" class="btn" name="btn" value="x2" onclick="if(checkNum(this.form.display.value)) { square(this.form) }">
+                <input type="button" class="btn" name="btn" value="+" onclick="addChar(this.form.display, '+')">
+            </div>
+            <div>
+                <input c type="button" class="btn" name="btn" value="C" onclick="this.form.display.value= 0 ">
+                <input type="button" class="btn" name="btn" value="<--" onclick="deleteChar(this.form.display)">
+                <input type="button" class="btn" name="btn" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }">
+                <input type="button" class="btn" name="btn" value="π" onclick="addChar(this.form.display,'3.14159265359')">
+                <input type="button" class="btn" name="btn" value="%" onclick=" percent(this.form.display)">
+            </div>
+            
+        </form>
+    </body>
+  <script src="main.js"></script>
+</html>

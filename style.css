@@ -1,0 +1,34 @@
+form {
+  padding: 30px;
+  width: 268px;
+  background-color: slategray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px rgb(188, 201, 214),
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px rgb(188, 201, 214),
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.display {
+  width: 238px;
+  height: 40px;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.btn {
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  color: azure;
+  background-color: darkslategray;
+  margin: 0;
+  font-weight: bold;
+}
